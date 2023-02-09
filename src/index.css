@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.no-shadow {
+  box-shadow: none !important;
+}
+
+.card {
+  border-radius: 0 !important;
+}
+
+
+.white-text {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.grey-text {
+  font-size: 11pt;
+  font-weight: bold;
+  color: grey;
+}
+
+.img {
+  /* height: 100px; */
+  width: 100px;
+}
+
+.owl-each-item{ 
+  width : 100px;
+  height : 100px;
+}
+
+.brand-section-mb {
+  margin-bottom: 30px;
+}
