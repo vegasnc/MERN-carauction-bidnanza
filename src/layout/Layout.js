@@ -13,24 +13,55 @@ function Layout(props) {
         <div>
             <div className="horizontalMenucontainer">
                 <div className="header-main">
-                    <div id="sticky-wrapper" className="sticky-wrapper" style={{ height: '34.2812px'}}>
-                        <div className="horizontal-header clearfix " style={{ backgroundColor: "black"  }}>
-                            <div className="container">
-                                <a id="horizontal-navtoggle" className="animated-arrow"><span /></a>
-                                <span className="smllogo">
-                                    <img src={logoIcon} width={250} alt="" />
-                                </span>
+                    <div className="top-bar p-3" data-select2-id={24}>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-xl-8 col-lg-8 col-sm-4 col-7">
+                                    <div className="top-bar-left d-flex" data-select2-id={23}>
+                                        <div className="clearfix">
+                                            <div className="header-search-logo d-none d-lg-block desktoplogo">
+                                                <a className="header-logo" href="#">
+                                                    <img src={logoIcon} alt="" />
+                                                </a>
+                                                <a className="header-logo-dark" href="#">
+                                                    <img src={logoIcon} alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-xl-4 col-lg-4 col-sm-8 col-5">
+                                    <div className="top-bar-right">
+                                        <ul className="custom ">
+                                            <li> <a href="register.html" className="text-dark"><i className="fa fa-user me-1" />
+                                                <span>SingUp</span></a> </li>
+                                            <li> <a href="login.html" className="text-dark"><i className="fa fa-sign-in me-1" />
+                                                <span>SignIn</span></a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div id="sticky-wrapper" className="sticky-wrapper" style={{ height: '88px' }}>
-                        <div className="horizontal-main  bg-dark-transparent clearfix" style={{ backgroundColor: "black" }}>
-                            <div className="horizontal-mainwrapper  container clearfix">
-                                <div className="desktoplogo">
-                                    <a href="#">
-                                        <img src={logoIcon} alt="" />
-                                    </a>
-                                </div>
+
+                    <div id="sticky-wrapper" className="sticky-wrapper" style={{ height: '34.275px' }}>
+                        <div className="horizontal-header clearfix " style={{ width: '1457.6px' }}>
+                            <div className="container">
+                                <a id="horizontal-navtoggle" className="animated-arrow"><span /></a> 
+                                <span className="smllogo"> 
+                                    <img src={logoIcon} width={120} alt="" /> 
+                                </span> 
+                                <span className="smllogo-dark"> 
+                                    <img src={logoIcon} width={120} alt="" /> 
+                                </span> 
+                                <a href="tel:245-6325-3256" className="callusbtn"><i className="fa fa-phone" aria-hidden="true" /></a> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="sticky-wrapper" className="sticky-wrapper is-sticky" style={{ height: '80px' }}>
+                        <div className="horizontal-main bg-dark-transparent clearfix" style={{ width: '1457.6px', position: 'fixed', top: '0px', zIndex: 'inherit' }}>
+                            <div className=" header-style horizontal-mainwrapper container clearfix"> {/*Nav*/}
                                 <nav className="horizontalMenu clearfix d-md-flex">
                                     <div className="outsidebg" />
                                     <ul className="horizontalMenu-list">
@@ -48,7 +79,7 @@ function Layout(props) {
                                         <li aria-haspopup="true"><a href="#">About US</a></li>
                                         <li aria-haspopup="true"><a href="#">SignIn</a></li>
                                     </ul>
-                                </nav>
+                                </nav> {/*Nav*/}
                             </div>
                         </div>
                     </div>
