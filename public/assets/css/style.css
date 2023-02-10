@@ -22179,12 +22179,12 @@ video {
 }
 
 .desktoplogo {
-  padding: 1.5rem 0;
   margin: 0;
   float: left;
 }
 .desktoplogo img {
-  width: 300px;
+  /* width: 300px; */
+  height: 50px;
 }
 
 .horizontalMenu {

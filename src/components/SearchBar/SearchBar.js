@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from '@mui/material/Grid';
 import SearchBox from "../SearchBox/SearchBox";
-import AutoCompleteInput from "../AutoCompleteInput/AutoCompleteInput";
+import AutoCompleteInput from "../AutoCompleteInput";
 import { MDBInputGroup, MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 
 export default function SearchBar() {
